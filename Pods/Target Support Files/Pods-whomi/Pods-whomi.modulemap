@@ -1,0 +1,6 @@
+framework module Pods_whomi {
+  umbrella header "Pods-whomi-umbrella.h"
+
+  export *
+  module * { export * }
+}
