@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.getStarted.layer.cornerRadius = 5
+//        self.getStarted.layer.cornerRadius = 5
         
     }
 

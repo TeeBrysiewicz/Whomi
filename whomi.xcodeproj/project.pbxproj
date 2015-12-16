@@ -21,6 +21,7 @@
 		D7BC61E81C21EE5300BFA04C /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC61E71C21EE5300BFA04C /* PostImageViewController.swift */; };
 		D7BC61EA1C21F69E00BFA04C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC61E91C21F69E00BFA04C /* FeedTableViewController.swift */; };
 		D7BC61EC1C21F6DC00BFA04C /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC61EB1C21F6DC00BFA04C /* cell.swift */; };
+		D7F324301C22192300EECB1A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3242F1C22192300EECB1A /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D7BC61E71C21EE5300BFA04C /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostImageViewController.swift; path = ../PostImageViewController.swift; sourceTree = "<group>"; };
 		D7BC61E91C21F69E00BFA04C /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		D7BC61EB1C21F6DC00BFA04C /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		D7F3242F1C22192300EECB1A /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		FF9DF09CAB5A0F1AECF6DD6E /* Pods-whomi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whomi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whomi/Pods-whomi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				D713CF131C21DE4200A60E26 /* AppDelegate.swift */,
 				D713CF151C21DE4200A60E26 /* ViewController.swift */,
 				D713CF171C21DE4200A60E26 /* Main.storyboard */,
+				D7F3242F1C22192300EECB1A /* MasterViewController.swift */,
 				D7BC61EB1C21F6DC00BFA04C /* cell.swift */,
 				D7BC61E91C21F69E00BFA04C /* FeedTableViewController.swift */,
 				D7BC61E51C21E6F200BFA04C /* TableViewController.swift */,
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F324301C22192300EECB1A /* MasterViewController.swift in Sources */,
 				D7BC61E81C21EE5300BFA04C /* PostImageViewController.swift in Sources */,
 				D7BC61EA1C21F69E00BFA04C /* FeedTableViewController.swift in Sources */,
 				D713CF161C21DE4200A60E26 /* ViewController.swift in Sources */,
