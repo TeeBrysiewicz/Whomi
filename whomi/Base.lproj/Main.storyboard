@@ -240,22 +240,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Users" id="7ZU-0t-GIw">
-                        <barButtonItem key="leftBarButtonItem" title="Feed" id="oWD-Y0-kDg">
-                            <connections>
-                                <segue destination="aBT-vL-uNN" kind="show" id="TbO-Pm-HBl"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="7Si-sW-ZDK">
-                            <connections>
-                                <segue destination="awK-Se-ebl" kind="show" id="IHK-Zg-3wz"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Feed" id="oWD-Y0-kDg"/>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="7Si-sW-ZDK"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyQ-9S-HVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268" y="479"/>
+            <point key="canvasLocation" x="2224" y="479"/>
         </scene>
         <!--Your Feed-->
         <scene sceneID="kNc-Jk-IJj">
@@ -267,7 +259,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="194" id="1VO-zS-k55" customClass="cell" customModule="whomi" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="194"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="194"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1VO-zS-k55" id="Jhh-B4-SUg">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
@@ -306,7 +298,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xw9-pr-irG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="-154"/>
+            <point key="canvasLocation" x="1406" y="-168"/>
         </scene>
         <!--Post Image-->
         <scene sceneID="YwB-hW-T08">
@@ -361,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJe-pS-lIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740" y="479"/>
+            <point key="canvasLocation" x="1406" y="1143"/>
         </scene>
         <!--Whomi-->
         <scene sceneID="NP1-nR-nSi">
@@ -374,6 +366,38 @@
                     <view key="view" contentMode="scaleToFill" id="NgG-gg-Cp8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whoami-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="tBH-yL-JP4">
+                                <rect key="frame" x="65" y="101" width="191" height="135"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gq3-2R-gSN">
+                                <rect key="frame" x="117" y="244" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.36862745098039218" green="0.0" blue="0.60392156862745094" alpha="0.32000000000000001" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Feed">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bv-CF-kaF">
+                                <rect key="frame" x="20" y="244" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.36862745098039218" green="0.0" blue="0.60392156862745094" alpha="0.32000000000000001" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ik0-R9-IQ4">
+                                <rect key="frame" x="214" y="244" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.36862745098039218" green="0.0" blue="0.60392156862745094" alpha="0.32000000000000001" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Users">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iHY-nm-X9j" kind="show" id="vib-AM-R9j"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Whomi" id="DcF-4Y-pL0">
@@ -383,17 +407,13 @@
                                 <segue destination="iyp-48-cdU" kind="modal" identifier="logout" id="E4r-EW-a33"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Users" id="pkb-vZ-xEI">
-                            <connections>
-                                <segue destination="iHY-nm-X9j" kind="show" id="pD7-1t-gnL"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="pkb-vZ-xEI"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzi-ki-bR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="479"/>
+            <point key="canvasLocation" x="1406" y="479"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pVf-26-1Ch">
@@ -410,7 +430,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujJ-f8-ndS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="479"/>
+            <point key="canvasLocation" x="1809" y="479"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIh-jm-Qh0">
