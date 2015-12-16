@@ -231,10 +231,17 @@ class StartViewController: UIViewController {
         
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    /*
+    
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
     override func viewDidAppear(animated: Bool) {
         
         if PFUser.currentUser() != nil {
@@ -244,6 +251,6 @@ class StartViewController: UIViewController {
         }
         
     }
-*/
+
     
 }
