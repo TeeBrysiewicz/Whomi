@@ -16,6 +16,7 @@
 		D713CF291C21DE4200A60E26 /* whomiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713CF281C21DE4200A60E26 /* whomiTests.swift */; };
 		D713CF341C21DE4200A60E26 /* whomiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713CF331C21DE4200A60E26 /* whomiUITests.swift */; };
 		D72297F51C21DF5F00B8AE8A /* whoami-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D72297F41C21DF5F00B8AE8A /* whoami-2.png */; };
+		D7BC61E21C21E23000BFA04C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC61E11C21E23000BFA04C /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		D713CF331C21DE4200A60E26 /* whomiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whomiUITests.swift; sourceTree = "<group>"; };
 		D713CF351C21DE4200A60E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D72297F41C21DF5F00B8AE8A /* whoami-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whoami-2.png"; sourceTree = "<group>"; };
+		D7BC61E11C21E23000BFA04C /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FF9DF09CAB5A0F1AECF6DD6E /* Pods-whomi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whomi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whomi/Pods-whomi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				D713CF131C21DE4200A60E26 /* AppDelegate.swift */,
 				D713CF151C21DE4200A60E26 /* ViewController.swift */,
 				D713CF171C21DE4200A60E26 /* Main.storyboard */,
+				D7BC61E11C21E23000BFA04C /* StartViewController.swift */,
 				D713CF1A1C21DE4200A60E26 /* Assets.xcassets */,
 				D713CF1C1C21DE4200A60E26 /* LaunchScreen.storyboard */,
 				D713CF1F1C21DE4200A60E26 /* Info.plist */,
@@ -340,6 +343,7 @@
 			files = (
 				D713CF161C21DE4200A60E26 /* ViewController.swift in Sources */,
 				D713CF141C21DE4200A60E26 /* AppDelegate.swift in Sources */,
+				D7BC61E21C21E23000BFA04C /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
