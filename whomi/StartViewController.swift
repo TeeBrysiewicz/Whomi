@@ -116,6 +116,10 @@ class StartViewController: UIViewController {
     @available(iOS 8.0, *)
     @IBAction func loginWithFacebook(sender: AnyObject) {
         
+        // ----------------
+        // FACEBOOK SIGNUP
+        // ----------------
+        
         PFFacebookUtils.logInInBackgroundWithReadPermissions(["public_profile","email"], block: { (user:PFUser?, error:NSError?) -> Void in
             
             if(error != nil) {
@@ -190,6 +194,58 @@ class StartViewController: UIViewController {
                                         self.displayAlert("Failed Signup", message: errorMessage)
                                     }
                                 })
+                            }
+                        })
+                    } else {
+                        
+                        // ----------------
+                        // FACEBOOK LOGIN 
+                        // ----------------
+                        
+                        var requestParameters = ["fields": "id, first_name"]
+                        let userDetails = FBSDKGraphRequest(graphPath: "me", parameters: requestParameters)
+                        userDetails.startWithCompletionHandler({ (connection, result, error) -> Void in
+                            
+                            if error != nil {
+                                return
+                            }
+                            
+                            if result != nil {
+                                
+                                let userId:String = result["id"] as! String
+                                let userFirstName:String? = result["first_name"] as? String
+                                
+                                var user = PFUser()
+                                user.password = String("password")
+                                user.objectId = userId
+                                
+                                // GET FACEBOOK NAME
+                                if userFirstName != nil {
+                                    user.username = String!(userFirstName)
+                                }
+                                
+                                
+                                PFUser.logInWithUsernameInBackground(user.username!, password: user.password!, block: { ( user, error ) -> Void in
+                            
+                                    self.activityIndicator.stopAnimating()
+                                    UIApplication.sharedApplication().endIgnoringInteractionEvents()
+                        
+                                    if user != nil {
+                                
+                                        // Logged In!
+                                
+                                        self.performSegueWithIdentifier("login", sender: self)
+                                
+                                    } else {
+                                        if let errorString = error!.userInfo["error"] as? String {
+                                            errorMessage = errorString
+                                        }
+                                
+                                        self.displayAlert("Failed Login", message: errorMessage)
+                                    }
+                            
+                                })
+                        
                             }
                         })
                     }

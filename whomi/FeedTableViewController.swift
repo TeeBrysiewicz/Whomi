@@ -64,10 +64,7 @@ class FeedTableViewController: UITableViewController {
                                     self.tableView.reloadData()
                                     
                                 }
-                                
-                                print(self.users)
-                                print(self.usernames)
-                                print(self.messages)
+
                             }
                             
                         })
